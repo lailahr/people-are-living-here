@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1,width=device-width,height=device-height,user-scalable=no">       
+    <title>People are Living Here</title>    
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->        
+    <meta property="og:title" content="People are Living Here" />
+    <meta name="description" content=" ">
+    <meta property="og:description" content=" " />
+    <meta property="og:type" content="non_profit" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="media/thumbnail/cw-nyakathisa6354.jpg" />
+    <meta property="og:site_name" content="People are Living Here" />
+        
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">                 
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/storyteller.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/modalos.css" media="all" rel="stylesheet" type="text/css">
+<style>
+  body {
+    font: 17px/18px Georgia;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    /*color: #004276;*/
+    text-decoration: none;
+  }
+
+  a:hover {    
+     cursor:pointer;
+     color: #004276;
+     text-decoration: none;
+  }
+
+  .article {
+    /*border-top: solid 1px #000;*/
+  }
+
+  .section.column {
+    margin:23px auto;
+  }
+  .section:after {
+    content: "";
+    clear: left;
+    display: block;
+  }
+  
+  .section--last {
+    margin-bottom: 130px;
+  }
+
+  .section--credits {
+    color: #999;
+    font-style: oblique;
+  }
+
+  .section--credits a {
+    color: #444;
+  }
+
+  .column {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 580px;
+  }
+
+  .column em{
+    font-style: italic;
+  }
+
+  .column ul, .column ol, .column ul ul, .column ol ol,
+  .column ul ol, .column ol ul {
+	  padding-left: 2em;
+  }
+
+  .column ul li {
+	  list-style-type:disc;
+	  line-height: 1.5;
+  }
+  .column ol li {
+	  list-style-type:decimal;
+	  line-height: 1.5;
+  }
+  
+  .column a{
+    text-decoration: underline;
+  }
+  .column p,.column p span
+  {
+    font-family: opensans-r !important;
+    color: #5A5A5A;
+    line-height: 24px !important;
+    font-size: 16px !important;
+    letter-spacing:normal !important;
+  }
+  .column p:lang(ka),.column p span:lang(ka)
+  {
+    font-family: 'dejavusans-r' !important;     
+    -webkit-font-smoothing: antialiased;  
+  }
+  .column blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eeeeee;
+  }
+
+ 
+  .section h3,.section h3 span {
+    margin: 5px 0px;   
+    
+    font-size: 19px;
+    font-weight:normal !important;
+    letter-spacing:normal !important;
+    line-height:24px !important;
+  }
+
+  .scroll-prompt {
+    position: absolute;
+    bottom: 80px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 3;
+    margin:0px auto;    
+ /*    text-shadow: 0 1px 2px #000;
+   background-image: url(assets/png/scroll.png);       
+    background-position: 50% 0%;
+    background-repeat: no-repeat; */
+    width:100%;
+  }
+
+  .scroll-prompt svg {
+    fill: #fff;             
+    position:relative;
+    top:28px;
+    animation:arrows infinite;
+    animation-duration:0.9s;
+    animation-direction:alternate-reverse;
+
+    /*  Safari and Chrome   */
+    -webkit-animation:arrows infinite;
+    -webkit-animation-duration:0.9s;
+    -webkit-animation-direction:alternate-reverse;
+}
+  @-webkit-keyframes arrows {
+    from {
+      top:28px;
+    }
+    to {
+      top:38px;
+    }
+  }
+  @keyframes arrows {
+    from {
+      top:28px;
+    }
+    to {    
+      top:38px;
+    }
+  }
+  .dropcap {
+    float: left;
+    font: bold 53px/70px opensans-l, Helvetica, Arial, sans-serif;    
+    margin: -7px 10px 0 0;
+    height: 1em;
+  }
+
+  .headline,
+  .slideshow-headline {
+    font: 200 30px/40px bandera-pro-b, Georgia, serif;
+    line-height:50px;
+  }
+  .headline:lang(ka),
+  .slideshow-headline:lang(ka) {
+    font: 200 30px/40px dejavusans-b, Georgia, serif;
+    line-height:50px;
+  }
+
+  .headline {
+    font-size: 45px;    
+    margin-bottom: 15px;
+  }
+  .slideshow-headline
+  {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 80px 0px 15px 0px;
+  }
+
+  .byline {
+    font: 16px opensans-l, Helvetica, Arial, sans-serif;    
+    opacity: 0.6;
+  }
+
+  .byline:lang(ka) {
+    font: 16px dejavu-r, Helvetica, Arial, sans-serif;        
+  }
+  .byline div{
+    display:inline-block;  
+  }
+  .byline .caption
+  {
+    opacity:0.6;
+  }
+  .byline .author {    
+    white-space: nowrap;    
+    opacity:1;
+  }
+
+  .byline--first {
+    margin-bottom: 14px;
+    opacity: 1;        
+  }
+  .source
+  {
+    font-style:italic;
+    font-size:12px;
+  }
+
+.source a
+{
+  color: #004276;
+    text-decoration: none;
+}
+  @media (max-width: 704px) {
+    .column {
+      margin: auto 5%;
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .ios body {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .ios .column {
+      margin: auto 8%;
+    }
+
+    .ios .section {
+      margin-top: 50px;
+    }
+
+    .ios .navigation {
+      background-color: #000;
+      position: static;
+    }
+
+    .section h4 {
+      font-size: 24px;
+      text-align: center;
+      margin: 10px 30px;
+    }
+
+    .section h3 {
+      font-size: 48px;
+      text-align: center;
+      margin: 10px 30px 30px 30px;
+    }
+  }
+
+  .image .caption {
+    font: 12px/1.4em opensans-r, Helvetica, Arial, sans-serif;
+    clear: left;
+    color: #999;
+  }
+  .section.column img.image  {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    .image--diptych {
+      width: 200%;
+      margin-left: -50%;
+    }
+
+    .image--diptych img {
+      position: relative;
+      width: 50%;
+      float: left;
+      left: 5px;
+    }
+
+    .image--diptych .caption {
+      margin-left: -5px;
+      padding-top: .7em;
+    }
+
+    .image--diptych img:first-child {
+      left: -5px;
+    }
+  }
+  .video {
+    font: bold 17px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .video-container {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .video-container video,
+  .video-container img {
+    width: 100%;
+    position: absolute;
+  }
+
+  .video-caption {
+    margin-top: 5px;
+    color: #888;
+    padding-bottom: 20px;
+    font-family:opensans-b; 
+    font-size:17px;
+    line-height: 29px;   
+  }
+  .video-caption:lang(ka)
+  {
+    font-family:dejavusans-b; 
+  }
+
+  .video-source {
+    font: 12px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #bdbdbd;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    z-index: 3;
+  }
+
+  .column .video {
+    border:8px solid #f0f0f0;
+    box-sizing: border-box;
+    margin: 40px -10%;
+    width: 120%;
+  }
+
+  .video-sequence:first-child {
+    margin-top: 40px;
+  }
+
+  .video-sequence .video {
+    min-height: 56.25vw;
+  }
+
+  .video-sequence-indicator {
+    font-family: arial;
+    position: absolute;
+    line-height: 1.4em;
+    top: 50%;
+    right: 20px;
+    color: #fff;
+    white-space: pre;
+  }
+
+  .video {
+    float: left;
+  }
+
+  .video + p {
+    clear: left;
+  }
+
+  .video .video-caption {
+    position: absolute;
+    left: 7%;
+    bottom: 20%;
+    width: 350px;
+    z-index: 3;
+    color: #fff;
+    /*text-shadow: 0 1px 2px #000;*/
+    padding: 20px 0;
+  }
+
+/*  .video-sequence .video:last-of-type .video-caption {
+    bottom: 30%;
+  }*/
+
+  .video .video-caption--long {
+    width: 400px;
+    bottom: 12.44%;
+  }
+
+  .video .video-caption--right {
+    right: 7%;
+    left: inherit;
+    text-align: left;
+  }
+
+  .video .video-caption--center {
+    left: inherit;
+    text-align: center;
+    width: 50%;
+    margin: 0 25%;
+  }  
+ .video-headline {    
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;  
+  }
+  .video-headline .headline
+  {    
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    left: 10%;
+    font-size: 4vmin;
+    line-height: 55px;
+    z-index: 3;
+  }
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) and (min-height: 500px) and (max-height: 800px) {
+  .video-caption--head .video-headline {
+    top: 20%;
+  }
+
+  .video-caption--head .video-summary {
+    bottom: 20%;
+  }
+}
+
+  @media only screen and (min-width: 320px) {
+
+    .ios .navigation-left {
+      margin-left: 25px;
+    }
+
+    .ios .scroll-prompt {
+      display: none;
+    }
+
+    /* GLOBAL STUFF */
+
+    .ios body {
+      overflow-x: hidden;
+    }
+
+    .ios #preview-banner {
+      display: none;
+    }
+
+    .ios .article {
+      border-top: none;
+    }
+
+    .ios .caption {
+      line-height: 1.1;
+    }
+
+    .ios .section h3 {
+      margin-top: 50px;
+    }
+
+    /* STANDALONE INSET IMAGES */
+
+    .ios .image {
+      width: 110%;
+      margin: 40px -5%;
+    }
+
+    /* SECTION + SEQUENCES */
+
+    .ios .section {
+      margin-top: 20px;
+    }
+
+    .ios .video-sequence {
+      background-color: #000;
+    }
+
+    .ios .video-sequence:first-child {
+      margin-top: 0px;
+    }
+
+    /* VIDEO SLIDE */
+
+    .ios .video {
+      box-sizing: border-box;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .ios .video-sequence .video,
+    .ios .video-container  {
+      overflow: visible;
+    }
+
+    .ios .video-container {
+      padding: 60px 0;
+      position: relative;
+      line-height: 0;
+    }
+
+    .ios .video-container img {
+      position: static;
+    }
+
+    .ios .video-source {
+      bottom: 65px;
+      right: 10px;
+    }
+
+    .ios .video-caption {
+      bottom: 0%;
+      top: 65px;
+      width: 260px;
+
+      left: 50px;
+    }
+
+    .ios .video-rule {
+      position: absolute;
+      bottom: 0px;
+      border-top: 1px solid #333;
+      left: 35%;
+      right: 35%;
+    }
+
+    /* INTRO SLIDE */
+
+    .ios .video-sequence:first-child {
+      padding-top: 0;
+    }
+
+    .ios .video-sequence:first-child .video:first-of-type {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ios .video-sequence:first-child .video:first-of-type .video-container:first-child {
+      padding-top: 0;
+      padding-bottom: 60px;
+      /*height: 360px;*/
+    }
+
+    /* HEADLINE AND INTRO */
+
+    .ios .video-sequence:first-child .video-caption--head {
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+    }
+
+    .ios .video-headline {
+      left: 25px;
+      top: 50px;
+      border-bottom: none;
+      color: white;
+      font-size: 45px;
+    }
+
+    .ios .video-headline .headline {
+      bottom: auto;
+      top: -2%;
+      font-size: 45px;
+      color: #FFF;
+      line-height: 60px;
+    }
+
+    .ios .video-summary {
+      right: 7%;
+      left: auto;
+      top: auto;
+      bottom: 0%;
+      width: 280px;
+      text-align: right
+    }
+
+    /* MAP STUFF FOR MOBILE */
+
+    .ios .map-sequence {
+      background-color: white;
+      margin-top: 0px;
+      padding-top: 0px !important;
+    }
+
+    .ios .map-sequence .video-container {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    .ios .map-sequence .video-caption {
+      font-family: Georgia;
+      font-size: 16px;
+      line-height: 26px;
+      position: static;
+      color: #000;
+      text-shadow: none;
+      max-width: 580px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      padding-bottom: 0px;
+      word-spacing: 0px;
+      letter-spacing: 0px;
+
+      font-weight: normal;
+    }
+
+    .ios .map-sequence .video-source {
+      bottom: 15px;
+      right: 0px;
+    }
+
+    .ios .map-hide {
+      min-height: 0px;
+    }
+
+    .ios .map-hide .video-container {
+      display: none;
+    }
+
+    .ios .map-hide .video-caption  {
+      padding-top: 20px;
+    }
+
+    .ios .map-hide:nth-of-type(1) .video-caption  {
+      padding-top: 0px;
+    }
+
+    /* TABLET AND PHONE MAPS */
+
+    .ios .map {
+      margin: 40px 0 40px -94px;
+      width: 100%;
+      height: auto;
+    }
+    .ios .map > * {
+      position: absolute;
+    }
+
+    .ios .map img {
+      position: static;
+    }
+
+    .ios .map-source {
+      right: 0px;
+      bottom: 5px;
+    }
+
+    .ios .nytg-tabletmap {
+      position:relative;
+      line-height: 1 !important;
+      overflow: hidden;
+      letter-spacing: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .ios .nytg-tabletmap img {
+      float: none;
+      position: static;
+    }
+
+    .ios .nytg-tabletmap p {
+      font-family:"Helvetica Neue",Helvetica,arial,sans-serif;
+      font-size:13px;
+      line-height:18px;
+      margin:0;
+      color: #fff;
+      opacity:.95;
+      font-weight: 500;
+    }
+
+    .ios .nytg-tabletmap > * {
+      position: absolute;
+    }
+
+    .ios .nytg-phonemap > * {
+      position: absolute;
+    }
+
+    .ios .nytg-phonemap {
+      position:relative;
+      width:100%;
+      font: 12px/15px "Helvetica Neue",Helvetica,arial,sans-serif;
+      color: #fff;
+      letter-spacing: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .ios .nytg-phonemap img {
+      float: none;
+      position: static;
+    }
+
+    .ios .nytg-phonemap p{
+      opacity: .95;
+      margin: 0;
+    }
+
+    .ios #nytg-phonemap_0_spratlys {
+      min-height: 273px;
+      background-color: #222;
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 782px) {
+    .ios .map-source {
+      right: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    /* SECTIONS + SEQUENCE */
+
+    .ios .column {
+      margin-left: 5% !important;
+      margin-right: 5% !important;
+    }
+
+    /* ARTICLE HEDS + SUBHEDS */
+
+    .ios .video-headline .headline,
+    .ios .headline {
+      line-height: 34px;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .ios .slideshow-headline {
+      line-height: 34px;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .ios .section h3 {
+      text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 28px;
+    }
+
+    .ios .column .byline br:nth-of-type(1) {
+      /*display: none;*/
+    }
+
+    .ios .image {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .ios .map {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .ios .video-sequence {
+      padding-top: 30px;
+    }
+
+    /* VIDEO SLIDE */
+
+    .ios .video  {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .ios .video-container {
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
+
+    .ios .video-caption {
+      position: static;
+      float: left;
+      padding-top: 0px;
+      margin-top: 0px;
+      text-align: left !important;
+      margin-left: 7%;
+      margin-right: 7%;
+      width: auto;
+      padding-bottom: 30px;
+
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .ios .video-source {
+      bottom: 35px;
+      right: 10px;
+    }
+
+    .ios .video-sequence:first-of-type .video-source {
+      display: none;
+    }
+
+    .ios .video-sequence:first-of-type.ios-loaded .video-source {
+      display: block;
+      bottom: 25px;
+      right: 5px;
+    }
+
+    .ios .video-rule {
+      display: none;
+    }
+
+    /* INTRO SLIDE */
+
+    .ios .video-sequence:first-child .video:first-child {
+      margin-top: 0;
+    }
+
+    .ios .video-sequence:first-child .video:first-of-type .video-container  {
+      padding-bottom: 40px !important;
+    }
+
+    .ios .ios-loaded:first-child .video:first-of-type .video-container {
+  /*    background-size: 200%;
+      background-position: 59% 0px;
+      background-image: url(http://temurkikava.files.wordpress.com/2013/12/1258985453_oac6jm.jpg);
+      background-repeat: no-repeat;*/
+    }
+
+    .ios .video-caption--head {
+      position: relative;
+      float: none !important;
+      margin-left: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .ios .video-headline {
+      /*position: static;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      right: auto;*/
+    }
+
+    .ios .video-headline .headline,
+    .ios .video-headline .byline {
+      position: absolute;
+      left: 25px;
+    }
+
+    .ios .video-headline .byline {
+      display: none;
+    }
+
+    .ios .ios-loaded .video-headline .byline {
+      display: block;
+    }
+
+    .ios .video-headline .headline {
+      top: 50px;
+      color: white;
+    }
+
+    .ios .video-caption--head .headline br:nth-of-type(1) {
+      display: none;
+      width: 5px;
+      height: 5px;
+    }
+
+    .ios .video-headline .byline {
+      top: 90px;
+      position: absolute;
+      color: #FFF;
+      border-top: none;
+      letter-spacing: 0px;
+      line-height: 16px;
+    }
+
+    .ios .video-summary {
+      position: static;
+      float: left;
+      text-align: left;
+      padding-left: 25px;
+      padding-bottom: 40px;
+      width: auto;
+      padding-right: 30px;
+    }
+
+    /* MAP SEQUENCE */
+
+    .ios .map-sequence .video-caption {
+      margin-left: 5%;
+      margin-right: 5%;
+      max-width: 100%;
+      width: auto;
+    }
+
+    .ios .map-sequence .video-source {
+      right: 5px;
+    }
+
+    .ios .map-source {
+      right: 0;
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .ios .video-sequence:first-child .video:first-of-type .video-container {
+      background-size: cover;
+      background-position: 60%;
+    /*  background-image: url(http://i1.nyt.com/newsgraphics/2013/10/24/south-china-sea-videos/assets/mobile-1024/sierra-madre-big-thin.jpg);*/
+    }
+
+    .ios .align-left {
+      left: 50px;
+      right: auto;
+      margin: 0;
+      text-align: left;
+    }
+
+    .ios .align-bottom,
+    .ios .video-sequence .video .align-bottom {
+      bottom: 65px;
+      top: auto;
+    }
+
+    .ios .align-middle {
+      top: 50%;
+      margin-top: -115px;
+    }
+
+    .ios .align-right {
+      right: 50px;
+      left: auto;
+      text-align: right;
+    }
+
+    .ios .caption-loresto-binoculars {
+      width: 240px;
+    }
+
+    .ios .caption-nytg-tabletmap-0-spratlys-template,
+    .ios .caption-underwater,
+    .ios .caption-night-exterior-storm,
+    .ios .caption-flight,
+    .ios .caption-cockpit {
+      width: 280px;
+    }
+
+    .ios .map {
+      min-width: 768px;
+    }
+  }
+  .map > * {
+    position: absolute;
+  }
+
+  .map {
+    color: #fff;
+    font: 13px/18px "Helvetica Neue",Helvetica,arial,sans-serif;
+    height: 512px;
+    margin: 40px -94px;
+    padding-bottom: 1.4em;
+    position: relative;
+    width: 768px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .map p {
+    margin: 0;
+    opacity: .95;
+  }
+
+  .map-source {
+    font: 11px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999;
+    bottom: -.2em;
+    right: 0;
+  }
+  .navigation {
+    font: 200 12px/20px opensans-r, Georgia, serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 39px;
+    background: #000;
+    z-index: 20;
+  }
+.navigation {
+     font: 200 12px/20px dejavusans-r, Georgia, serif;
+}
+  .navigation-app
+  {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 39px;
+  }
+  .navigation a {
+    color: #fff;
+      text-decoration:none;
+  }
+
+  .ios .navigation {
+    position: absolute;
+  }
+
+  .navigation-left,
+  .navigation-left > *,
+  .navigation-right > * {
+    float: left;
+  }
+
+  .navigation-left {
+    margin-left: 7%;
+  }
+
+  .navigation-right {
+    float: right;
+    margin-right: 7%;
+  }
+/*
+  .navigation-headline:before,
+  .navigation-sections:before,
+  .navigation-shares:before {
+    content: "";
+    float: left;
+    height: 20px;
+    border-right: solid 1px #444;
+    margin: 0px 15px;
+  }*/
+  .brand
+  {
+    font-size: 17px !important;
+  }
+  .navigation-headline {
+    float: left;    
+      letter-spacing: .1em;
+      margin-top: 10px;
+    /*text-transform: uppercase;*/
+  }
+
+  .navigation-headline:before {
+    margin-top: 0;
+  }
+
+  .navigation-sections:before {
+    margin-right: 5px;
+  }
+
+  .navigation-section {
+    /*padding: 0px 10px 0px 10px;*/
+    float: left;
+  }
+
+  .navigation-section:last-child {
+    padding-right: 0;
+  }
+
+  .navigation-section,
+  .navigation-volume {
+    opacity: .5;    
+  }
+  
+  .navigation-section:hover,
+  .navigation-section--active,
+  .navigation-volume:hover {
+    opacity: 1;
+    cursor:hand;
+    text-decoration:none;
+  }
+
+  .navigation-marker {
+    position: absolute;
+    margin-top: -42px;
+  }
+
+/*  .navigation-volume,*/
+  .navigation-share {
+    display: inline-block;
+    padding: 11px 5px;
+  }
+
+  .navigation-icon {
+    width: 27px !important;
+    height: 27px !important;
+    background-image: url('assets/svg/sound.svg');
+  }
+
+  .navigation-volume .navigation-icon { opacity:0.8; }
+  .navigation-volume .navigation-icon:hover { opacity:1; }
+  .navigation-volume.navigation-volume--muted .navigation-icon {  
+    background-image: url('assets/svg/soundoff.svg');
+    width: 27px !important;
+    height: 27px !important;
+  }
+  /*.navigation-volume.navigation-volume--muted .navigation-icon:hover {  }*/
+  .navigation-volume{display: inline-block; top: 4px; padding:0px 0px 0px 10px!important;}
+
+
+/*  @media screen and (max-width: 999px) {
+    .navigation-headline {
+      display: none;
+    }*/
+
+/*    .ios .navigation-headline {
+      display: none !important;
+    }
+  }*/
+
+  @media screen and (min-width: 320px) {
+    .ios .navigation-shares,
+    .ios .navigation-volume
+    /*.ios .navigation-headline {*/
+      {
+      display: none;
+      
+    }
+
+    .ios .navigation {
+      background-color: transparent;
+      position: absolute;
+    }
+    .ios .navigation-sections {
+      margin-top: 10px;
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .ios .navigation-solid {
+      background-color: #000;
+      position: fixed;
+    }
+
+    .ios .navigation-solid .navigation-headline {
+      display: block;
+    }
+    .ios .navigation-solid .navigation-sections {
+      margin-top: 0px;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .ios .navigation-headline,
+    .ios .navigation-right {
+      display: none;
+    }
+  }
+
+
+
+  .footer-section {
+    width: 100%;
+    
+    min-height: 40px !important;
+    height:40px;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+    border-color: #252525;  
+    font-size: 10pt;
+    color: #999999;
+  }
+  .footer-section  > div
+  {
+    height:40px;
+    line-height:40px;
+    vertical-align: middle;
+  }
+  .footer-section div#left {
+      margin: 0px !important;
+      float: left;
+      width: 30%;
+      padding-left:20px;
+  }
+  .footer-section #middle {
+    margin: 0;
+	  font-size: 12px;
+	  width: 37%;
+	  text-align: center;
+	  float: left;
+  }
+  .footer-section #middle ul {
+	  height:40px;
+	  line-height:40px;
+  }
+
+  .footer-section #middle ul li {
+	  display: inline;
+	  font-family: Arial;
+    border-right: 1px solid #ccc;
+  }
+  .footer-section #middle ul li:last-child {
+    border-right: none;
+  }
+  .footer-section #middle ul li a {
+	  padding: 0 10px;
+  }
+
+  .footer-section div#right {
+  margin: 0 !important;
+  float: right;
+  width: 30%;
+  text-align: right;
+  padding-right:20px;
+  }
+
+  .footer-section div#right a {
+    border-right: 1px solid #ccc;
+    color: #aaa;
+    font: 10px sans-serif;
+    margin-right: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .footer-section div#right a:last-child {
+    border-right: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section div#right a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .footer-section ~ * {
+    position: absolute;
+    top: -1000px;
+  }
+
+  .footer-section div#right img {
+    vertical-align: middle;
+  }
+
+  .footer-section {
+    color: #999999;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+  }
+  .ios .footer-section #middle
+  {display:none;}
+  .ios .footer-section
+  {
+    margin:0px auto;
+  }
+  .column-caption
+  {
+    font-family:opensans-b, Georgia, serif;    
+    line-height:24px;
+    font-size:22px;
+    margin:5px 0px;  
+  }
+  .column-caption:lang(ka)
+  {
+    font-family:dejavusans-b, Georgia, serif; 
+    -webkit-font-smoothing: antialiased;     
+  }
+  .column-sub-caption:lang(ka)
+  {
+    font-family:dejavusans-r, Georgia, serif;   
+    -webkit-font-smoothing: antialiased;      
+  }
+
+  /* slideshow */
+
+.section.slideshow {
+  font: 13px/1.4em arial, helvetica, sans-serif;
+  margin:23px auto;
+  max-width: 812px;    
+}
+
+.slideshow-wrapper
+{
+  position: relative;
+  margin-bottom: 10px;
+}
+.slideshow-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.slideshow-images{
+  text-align: center;
+  max-height: 462px;
+}
+.slideshow-image,
+.slideshow-caption {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slideshow-title
+{
+
+}
+.slideshow-caption {
+  min-height: 70px;
+}
+.slideshow-caption {
+  margin-top: 5px;
+  color: #888;
+  padding: 3px 0 30px 0;
+  /*height: 5em;*/
+  width: 60%;
+}
+
+
+.ios .slideshow {
+  font: 13px/1.4em arial, helvetica, sans-serif;
+  margin:0px auto;
+  width:100%;
+  max-width: 100%;
+}
+
+.ios .slideshow-captions {
+  display:none;
+}
+.ios .slideshow-wrapper
+{
+  position: relative;  
+  width:100%;
+  margin:0px auto;
+}
+.ios .slideshow-container
+{
+  position: relative;  
+  width:100%;
+  margin:0px auto;
+}
+.ios .slideshow-images
+{
+  max-height:none;
+}
+.ios .slideshow-image
+{
+  position:static;
+  width:100%;
+  opacity:1;
+}
+.ios img.slideshow-image
+{
+  display:block;
+}
+.ios .section.slideshow h3
+{
+  margin:0px;
+  padding:0px;
+  background-color:#000;
+  color:#fff;
+  font-size:16px;
+  padding-left:15px;
+}
+.slideshow-caption--active {
+  opacity: 1;
+}
+
+.slideshow-caption--active,
+.slideshow-image--active {
+  position: relative;
+  opacity: 1;
+}
+
+.slideshow-image--active {
+  -webkit-transition: opacity .75s;
+  -moz-transition: opacity .75s;
+  -ms-transition: opacity .75s;
+  -o-transition: opacity .75s;
+  transition: opacity .75s;
+}
+
+.slideshow-button {
+  position: absolute;
+  opacity: 0.1;
+  cursor: pointer;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
+  -ms-transition: opacity .25s;
+  -o-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.slideshow-button:hover {
+  opacity: .8;
+}
+
+.slideshow-button--next {
+  right: 0;
+}
+
+.slideshow-button--previous {
+  left: 0;
+}
+
+.slideshow-button-arrow {
+  background: #fff;
+  border: none;/*solid 1px rgba(255,255,255,0.3);*/
+  color: #000;
+  fill: #000;
+  /*padding: 20px 11px 17px 12px;*/
+  position: absolute;
+  top: 48%;
+}
+
+.slideshow-button--next .slideshow-button-arrow {
+  /*border-radius: 4px 0 0 4px;*/
+  border-right: none;
+  right: 0;
+}
+
+.slideshow-button--previous .slideshow-button-arrow {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  left: 0px;
+  text-align: right;
+}
+
+.slideshow-thumbs {
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+
+.slideshow-thumb {
+  border: solid 2px #ddd;
+  cursor: pointer;
+  height: 40px;
+  margin: 11px 0 0 11px;
+  opacity: .5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  width: 40px;
+}
+
+.slideshow-thumb--active {
+  opacity: 1;
+  border-color: #999;
+}
+
+.slideshow-thumb:hover {
+  border-color: #aaa;
+}
+
+.ie8 .slideshow-caption {
+  position: static;
+}
+
+.ie8 .slideshow-caption + .slideshow-caption {
+  display: none;
+}
+
+@media (max-width: 859px) {
+  .slideshow {
+    margin: 10px 0;
+    width: 100%;
+    float: none;
+  }
+
+  .slideshow .slideshow-image,
+  .slideshow .slideshow-caption,
+  .slideshow .slideshow-container {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .slideshow-caption {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    height: 6em;
+  }
+}
+#storyTeller
+{
+
+  top:41px;
+}
+
+
+
+/* embed */
+.section.embed
+{
+  position: relative; 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+
+}
+.embed-container
+{ 
+  text-align:center;
+  margin:10px 0px 23px 0px;
+  width:100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.embed-caption
+{
+  text-align:left;
+  margin-top:23px;
+}
+
+
+
+</style>
+
+
+	      
+    <meta name="google" content="notranslate" />
+  </head>
+  <body>     
+      <nav class="navbar navbar-default navbar-static-top navbar-story" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#story-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="http://storybuilder.jumpstart.ge/en" class="navbar-logo" title="Build your story with StoryBuilder"><img alt="StoryBuilder" src="assets/svg/slogo_b.svg" style="vertical-align:middle;"></a>
+        <a href="#" class="navigation-headline navbar-brand">People are Living Here</a>         
+    </div>
+
+    <div class="collapse navbar-collapse" id="story-navbar-collapse">
+          <div class="separator-ver-b"></div>
+          <div class="about"><a id="modalAbout" data-modalos-id="modalos-about">About</a></div>
+            <div class="nav-volume-chapters">
+              <div class="nav-volume"><a href="#" class="navigation-volume"><div class="navigation-icon"></div></a></div>
+             
+            </div>  
+    </div>
+  </div>
+</nav>
+
+<div id="modalos-about" style="display:none;" class="about-window">
+  <div class="publish">
+    <div class="day"></div>
+    <div class="month-year"></div>
+  </div>         
+  <div class="title">People are Living Here</div>
+  <div class="text"><p><span>&nbsp;</span></p> </div> 
+</div>
+
+    <div id='storyTeller'> 
+            <!-- ****************************************************
+      *  if device is portable we are adding ios class to html tag
+      *  so new classes with .ios .someclass path are used instead of basic ones
+      ********************************************************* -->
+      <script>
+        var isMobile = function() {
+          return /iPad|iPod|iPhone|Android/.test(navigator.userAgent) || document.location.hash == "#ipad";
+        }
+
+        var isPhone = function() {    
+          return isMobile() && window.innerWidth < 768;
+        }
+        if (isMobile()) {
+
+          document.documentElement.className = document.documentElement.className + " ios";
+        }  </script>
+
+
+      <!--[if lte IE 8]><style type="text/css">
+      .video-container video,
+      .video-container img 
+      {
+        position: static;
+      }
+      </style><![endif]-->
+
+
+      <!-- ****************************************************
+      *  array of functions added throught page which should be called at the end of page parsing with "await"  
+      *  function which is called at the bottom of the page
+      ********************************************************* -->
+      <script>
+
+        (function() {      
+          var defers = [];
+          defer = function(f) { defers.push(f); };
+          await = function() { defers.forEach(function(f,s) { f();}); };
+
+        })();</script>
+
+
+      <!-- ****************************************************
+      *  collecting navigation sections and it's markers
+      *  binding click events on anchors and navigation section on resize and scroll
+      ********************************************************* -->
+      <script>
+
+          defer(function() {    
+              var anchor = d3.selectAll(".navigation-section").on("click", clicked),
+                  marker = d3.selectAll(".navigation-marker"),
+                  markerOffsets;
+
+              d3.select(".navigation-headline").on("click", clicked);
+
+              d3.select(window)
+                  .on("resize.navigation", resized)
+                  .on("load.navigation", resized)
+                  .on("scroll.navigation", scrolled);
+
+              resized();
+
+              function resized() {
+                markerOffsets = marker.datum(function(d, i) { return i ? this.offsetTop : 0; }).data();
+                scrolled();
+              }
+
+              function scrolled() {
+                var j = Math.max(0, Math.min(markerOffsets.length - 1, d3.bisectLeft(markerOffsets, pageYOffset + 80) - 1));
+                anchor.classed("navigation-section--active", function(d, i) { return i === j; });
+              }
+
+              function clicked(d, i) {
+               // console.log(d); console.log(i);
+                d3.event.preventDefault();
+                d3.transition().duration(750).tween("scroll", function() {
+                  var offset = d3.interpolateNumber(pageYOffset, markerOffsets[i]);
+                  return function(t) { scrollTo(0, offset(t)); };
+                });
+              }
+
+          });</script>
+
+    <div class="main">
+      <div class="article"> 
+              <div class="section video-sequence" >
+                   <a class="navigation-marker" id="1"></a>
+                  <div class="video"    data-videoloop>
+                    <div class="video-container">
+                            <img src="media/images/fullscreen/12337__cw-nyakathisa6354.jpg">
+                         <div class="video-source">Photo by Michael Walker</div>                       
+                    </div>     
+
+                      <div class="video-headline">
+                        <div class="headline">People are Living Here
+                          <div class="byline byline--first" style="margin-bottom:24px;">
+                            <span class="caption">By</span><span class="author">&nbsp;Noloyiso Mtembu and Lailah Ryklief</span>
+                          </div>         
+                        </div>
+                      </div> 
+                      <div class="scroll-prompt">
+                       <svg  x="0px" y="0px" width="18.03px" height="18.042px" viewBox="7.516 6.5 18.03 18.042" enable-background="new 7.516 6.5 18.03 18.042"
+             xml:space="preserve">
+          <polygon points="16.531,22.763 8.52,14.963 7.695,15.766 16.531,24.367 25.367,15.766 24.544,14.963 "/>
+          <polygon points="25.367,7.477 24.544,6.674 16.531,14.475 8.52,6.674 7.695,7.477 16.531,16.079 "/>
+          </svg>
+                      </div>  
+                  </div>        
+              </div>
+              <div class="section column" >    
+                
+                                       
+                <h6 style="text-align: right; font-size: 9px;"><em>&nbsp;Image: Nyakathisa resident Bongani Gocina has lived in the informal settlement since 2008. Apart from six toilets and a communal tap installed in recent years, the settlement has no basic services. The majority of its residents relieve themselves in sand dunes behind their homes. Photo by Michael Walker</em></h6>
+<p>&nbsp;</p>
+<h1><strong>Cape Town's "Missing" People</strong></h1>
+<h3 style="margin-top: 3px;">&nbsp;</h3>
+<h3 style="margin-top: 3px;">The Uncounted Informal Settlements</h3>
+<h3>&nbsp;</h3>
+<p style="text-align: justify;"><span id="docs-internal-guid-c0e68aeb-8975-af1c-c36b-1e71d7d9c470"><span>MORE than 100 informal settlements scattered throughout the Cape Town Metro were not counted in Census 2011, according to an analysis of City of Cape Town data.</span></span></p>
+<p style="text-align: justify;"><span id="docs-internal-guid-c0e68aeb-8975-af1c-c36b-1e71d7d9c470"><span>And at least 23 new informal settlements have sprung up around the Metro between 2013 and 2015, as more and more people flood into Cape Town from the Eastern Cape in search of work.</span></span></p>
+<p style="text-align: justify;"><span id="docs-internal-guid-c0e68aeb-8975-af1c-c36b-1e71d7d9c470"></span><span id="docs-internal-guid-c0e68aeb-8976-57f4-d02b-043c148dfdd0">The data is based on a survey of toilet facilities in informal settlements collected by the city. Although the date when the data was collected is not known, it was conducted after the 2011 national census. The data became public after NGO Ndifuna Ukwazi used the Promotion of Access to Information Act (PAIA) to force the city to release it. &ldquo;We wanted to know how many toilets and other water and sanitation assets the city had in informal settlements. We also wanted GPS coordinates to know where they are so we could check if they existed,&rdquo; the NGO said.</span></p>
+<p style="text-align: justify;"><span id="docs-internal-guid-c0e68aeb-8976-8c27-ecf8-7207c38026cb">Using the GPS coordinates Julia Renouprez, a data wrangler at <a title="Code for South Africa" href="code4sa.org" target="_blank">Code for South Africa</a>, located the informal settlements on a map using Google Earth. She then matched the coordinates with census information to find the demographics of people who lived in the informal settlements.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<blockquote>
+<p style="text-align: justify;"><span><span id="docs-internal-guid-c0e68aeb-8976-f06b-451e-715e57a5524a"><span>&ldquo;What I discovered was that in many instances the census small area layer boundaries matched exactly the boundaries of these clusters of shiny tin roofs on the satellite images, which tells me that the census sampling took them into account,&rdquo; she said. &ldquo;But there were also many instances where the boundaries of the informal settlements had no correlation at all with the census boundaries, suggesting that they had never been counted,&rdquo; she said.</span></span></span></p>
+</blockquote>
+<p style="text-align: justify;">&nbsp;</p>   
+              </div>   
+              <div class="section column" >    
+                
+                                       
+                <p><iframe src="https://ancestrestudio.cartodb.com/viz/5f1dfe76-e447-11e5-a687-0ecd1babdde5/embed_map" frameborder="0" width="100%" height="520"></iframe></p>   
+                  <p>&nbsp;</p>
+              </div>   
+              <div class="section column" >    
+                
+                                       
+                <p style="text-align: justify;"><span id="docs-internal-guid-c0e68aeb-8979-9e62-5328-af783bc83d84"><span><strong>Using the map:</strong> <em>Scores of Cape Town informal settlements were not counted in Census 2011. On the map uncounted settlements are shaded&nbsp;in red while those which developed between 2013 and 2015 are shaded&nbsp;in green. The area shaded in blue show informal settlements as counted in Census 2011. Some portions of the blue and the red layers overlap which shows that some missed areas form small portions of the counted areas. Hover on the map to see the name of the uncounted settlement and click on the shaded area to read the extent to which a settlement was counted in 2011.</em></span></span></p>
+<p style="text-align: justify;" dir="ltr">&nbsp;</p>
+<p style="text-align: justify;" dir="ltr"><span>During the 2011 Census, Statistics South Africa counted 216 informal settlements in the Metro, home to 570 035 people.</span></p>
+<p style="text-align: justify;" dir="ltr"><span>But, using the toilet facilities data, Weekend Argus can reveal that 111 informal settlements were never counted. In some cases this number consist of shacks that have mushroomed on empty pieces of land between houses in built up areas.</span></p>
+<p style="text-align: justify;" dir="ltr"><span>For purposes of enumeration during the Census, living spaces were divided into Enumeration Areas which are small geographic units assigned to one person to enumerate. The enumeration areas make up Small Areas which make up Sub Places, which in turn form Main Places.</span></p>
+<p style="text-align: justify;" dir="ltr">&nbsp;</p>   
+              </div>   
+              <div class="section video-sequence" >
+                  <div class="video"    data-videoloop>
+                    <div class="video-container">
+                            <img src="media/images/fullscreen/12339__settlements-numbers.jpg">
+                         <div class="video-source">Photo by Michael Walker</div>                       
+                    </div>     
+
+                  </div>        
+              </div>
+              <div class="section column" >    
+                
+                                       
+                <div id="lipsum" style="text-align: center;">
+<h6 style="text-align: right; font-size: 9px;" dir="ltr"><em>Image: Mfuleni Resident walks on the road dividing RDP housing and Nyakathisa informal settlement. Photo by Michael Walker</em></h6>
+<p style="text-align: right;" dir="ltr">&nbsp;</p>
+<p style="text-align: justify;" dir="ltr"><span>Statistics South Africa spokesman Trevor Oosterwyk denied that some informal settlements were not included in the 2011 count. &ldquo;The City of Cape Town is 100 percent covered with enumeration areas (EAs). Unless an EA was not enumerated, all people were enumerated,&rdquo; Oosterwyk said.</span></p>
+<p style="text-align: justify;" dir="ltr"><span>Asked about Cape Town settlements which were not reflected in the Census, he said: &ldquo;The fact that we do not have these names as sub-places does not mean the areas were not enumerated. No omissions were made,&rdquo; he said.</span></p>
+<p style="text-align: justify;" dir="ltr">But he admitted that some people could have been left out because they were not in their homes when the enumerators visited their areas. &ldquo;People who work in places far away from home and, thus leave very early in the morning and return late in the evening were difficult to enumerate. Enumerators only worked between 8am and 7pm and there would be people who leave their homes at 5am and return after 8pm for instance. In most cases this was mitigated by making suitable appointments with people to be counted,&rdquo; he said.</p>
+<p style="text-align: justify;" dir="ltr"><span>While it is not possible to say how many residents of informal settlements were not counted, in the Nyakathisa settlement, which is part of Mfuleni township,&nbsp;</span>none of the residents Weekend Argus spoke to were visited by enumerators or knew of someone who had been. It&nbsp;falls within Ward 108 of the City of Cape Town and consists of a mix of formal and informal housing.&nbsp;Nyakathisa is made up of shacks that&nbsp;have sprung up on an open piece of ground within ward 108.</p>
+<p style="text-align: justify;" dir="ltr">&nbsp;<iframe id="cr-embed-ward-19100108-economics-individual_income_distribution" class="census-reporter-embed" src="http://embed.wazimap.co.za/static/iframe.html?geoID=ward-19100108&amp;chartDataID=economics-individual_income_distribution&amp;dataYear=2011&amp;chartType=histogram&amp;chartHeight=200&amp;chartQualifier=Universe%3A+Employed+individuals&amp;chartTitle=Employees+by+monthly+income&amp;initialSort=&amp;statType=scaled-percentage" frameborder="0" width="100%" height="300"></iframe></p>
+<script type="text/javascript" src="http://embed.wazimap.co.za/static/js/embed.chart.make.js"></script>
+</div>   
+              </div>   
+              <div class="section column" >    
+                
+                                       
+                <p style="text-align: justify;" dir="ltr">&nbsp;</p>
+<p style="text-align: justify;" dir="ltr">Narrow passages run between the shacks in which people with access to communal taps, but not toilets, live. Behind the shacks are foul smelling sand dunes that people living in the settlement use as a toilet.</p>
+<p style="text-align: justify;" dir="ltr">Father-of-three Bongani Gocina, who has lived in a shack in the settlement since 2007, moved to Cape Town from the Eastern Cape to look for work and found a seasonal job as a construction worker. He says he was not visited by a 2011 Census enumerator and also did not receive an appointment request. &ldquo;There were about 30 shacks here when I came, but the settlement has grown since then. I do not remember anyone doing census here in 2011,&rdquo; he said.&nbsp;</p>
+<p style="text-align: justify;" dir="ltr">&nbsp;</p>
+<p style="text-align: justify;" dir="ltr"><span>Gocina expressed shock when he learned that his settlement was not counted. </span></p>
+<blockquote>
+<p style="text-align: justify;" dir="ltr"><span>&ldquo;This is painful because we have been hopeful that we are being considered, especially for houses and electricity. It seems no one even knows we exist yet we have been voting,&rdquo; he said shaking his head.</span><span><br class="kix-line-break" /></span><span>Like many other Nyakathisa residents, Gocina said they seldom saw the area&rsquo;s ward councillor, Themba Honono of the ANC.</span></p>
+<p style="text-align: justify;" dir="ltr"><span>&ldquo;We sometimes hear that he is visiting Bardale or other sections but we have never met him here,&rdquo; the resident said.</span></p>
+</blockquote>
+<p style="text-align: left;">&nbsp;</p>   
+              </div>   
+              <div class="section embed" >
+                 <div class="embed-caption">
+                  "We just want a house"
+                </div>    
+                <div class="embed-container">
+                  <iframe width="640" height="390" src="http://www.youtube.com/embed/YecyKnQUcBY" frameborder="0" allowfullscreen="" class="embed-video embed-youtube"></iframe>             
+                </div>                         
+              </div>
+              <div class="section column" >    
+                
+                                       
+                <p style="text-align: justify;" dir="ltr">&nbsp;</p>
+<p style="text-align: justify;" dir="ltr">Residents of Extension 6 confirmed that the informal settlement existed long before the 2011 census. &ldquo;A lot of us lived there until some people, including myself, moved into these RDP houses in 2008,&rdquo; said Thembakazi Banjwa.</p>
+<p style="text-align: justify;" dir="ltr">Nyakathisa was meant to be a temporary settlement while the houses were being built,&rdquo; &nbsp;she said.</p>
+<p style="text-align: justify;" dir="ltr">The squalor and unhealthy living conditions of Nyakathisa were affecting Extension 6 and &ldquo;until recently Nyakathisa had no water or toilets. They used our water and our bills were very high,&rdquo; she said. &ldquo;They still do not have electricity, hence you see illegal connection,&rdquo; Banjwa said.</p>
+<p style="text-align: justify;" dir="ltr"><span>A walk through Nyakathisa revealed the dire conditions which &nbsp;residents live in. The shacks are crammed tightly together, with narrow passages in between. There are only six communal toilets at the front of the settlement, which are kept locked and only used by the 18 households they were allocated to in 2013. The rest of the estimated 200 residents use the sand dunes behind their homes as an open air toilet.</span>&nbsp;</p>
+<p style="text-align: center;"><iframe id="cr-embed-ward-19100108-service_delivery-toilet_facilities_distribution" class="census-reporter-embed" style="margin: 1em; max-width: 300px;" src="http://embed.wazimap.co.za/static/iframe.html?geoID=ward-19100108&amp;chartDataID=service_delivery-toilet_facilities_distribution&amp;dataYear=2011&amp;chartType=pie&amp;chartHeight=200&amp;chartQualifier=&amp;chartTitle=Population+by+toilet+facilities&amp;initialSort=&amp;statType=percentage" frameborder="0" width="100%" height="300"></iframe>&nbsp;</p>
+<p style="text-align: justify;" dir="ltr">Shack dwellers have set up illegal electrical connections to low cost houses across the road, paying a fee that is determined by the owners.&nbsp;</p>
+<p style="text-align: center;"><iframe id="cr-embed-ward-19100108-service_delivery-electricity_access_distribution" class="census-reporter-embed" style="margin: 1em; max-width: 300px;" src="http://embed.wazimap.co.za/static/iframe.html?geoID=ward-19100108&amp;chartDataID=service_delivery-electricity_access_distribution&amp;dataYear=2011&amp;chartType=pie&amp;chartHeight=200&amp;chartQualifier=&amp;chartTitle=Population+by+electricity+usage&amp;initialSort=&amp;statType=percentage" frameborder="0" width="100%" height="300"></iframe></p>
+<p style="text-align: justify;" dir="ltr">Census data is used for planning purposes and if, for any reason, people were omitted from the count, the data would not be a true reflection of the South African population,&rdquo; said Oosterwyk.</p>
+<p style="text-align: justify;" dir="ltr"><span>&ldquo;The Census is important because this process helps compile a numerical profile of South Africa. This in turn informs decision-making at all levels both in government and the private sector,&rdquo; Oosterwyk said. &ldquo;A population census is a total count of the country&rsquo;s population, where demographic, social and economic information, as well as information about the housing conditions of the people who live in South Africa is gathered,&rdquo; he said.</span></p>
+<p style="text-align: justify;" dir="ltr"><span>The member of the Cape Town mayoral committee for human settlements, Benedicta van Minnen did not deal with questions about informal settlements not being counted. She said the city conducted its own surveys in informal settlements &ldquo;to ensure that our records are kept updated and that we have a specific understanding of the dynamics within informal settlements pertaining to the growth of the population, service levels and future service requirements&rdquo;. &nbsp;</span></p>
+<p style="text-align: justify;" dir="ltr"><span>The ANC ward councilor for ward 108, under which Nyakathisa falls, Themba Honono, failed to respond to a request for comment.</span></p>
+<p style="text-align: right;"><span><span id="docs-internal-guid-c0e68aeb-89b0-e546-5d08-840a3e06b143"><span>noloyiso.mtembu@iol.co.za</span></span></span></p>
+<p style="text-align: right;">&nbsp;</p>   
+              </div>   
+              <div class="section column" >    
+                
+                                       
+                <h1 style="text-align: center;"><strong>How we did it</strong></h1>
+<p>&nbsp;</p>
+<h3><strong>March - August 2015</strong></h3>
+<p dir="ltr"><span>Ndifuna Ukwazi (NU) made numerous requests to the City of Cape Town for data concerning water and sanitation in informal settlements in Cape Town. &nbsp;Eventually after submitting a PAIA (Promotion of Access to Information Act) request the City of Cape Town supplied NU with a number of scanned pdf documents containing the type and GPS location of public toilet facilities in informal settlements</span></p>
+<p><span><span>&nbsp;</span></span></p>
+<h3><strong>September &nbsp;- October 2015</strong></h3>
+<p dir="ltr"><span>Code for South Africa gained access to these pdf&rsquo;s from NU and converted the pdf&rsquo;s &nbsp;to compile a single database of all the public toilet locations in Cape Town&rsquo;s informal settlements. &nbsp;These locations were then mapped, and used to pinpoint them on Google Earth. &nbsp;The boundaries of the informal settlements were drawn in reference to the location of the clusters of tin-shack housing on Google Earth and the Census 2011 Small Area Layer boundaries. &nbsp;</span></p>
+<p dir="ltr"><span>This process linked the informal settlements to the 2011 Census data, which</span></p>
+<ol>
+<li dir="ltr">
+<p dir="ltr"><span>Provided the link to populate the household counts and demographics of those informal settlements that aligned with the Small Area Layer boundaries, and</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Highlighted a number of informal settlements that were unaccounted for by the Small Area Layer boundaries</span></p>
+</li>
+</ol>
+<p><span><span>&nbsp;</span></span></p>
+<h3><strong>March 2015</strong></h3>
+<p dir="ltr">Using rooftop points pinpointed by a <a title="GeoTerraImage" href="http://www.geoterraimage.com/" target="_blank">Geoterraimage</a> Growth Indicator dataset, which were captured from satellite imagery taken in 2013. From this Code for South Africa was able to identify 2013 &ldquo;new&rdquo; informal settlements that were not in existence in 23.</p>
+<p>&nbsp;</p>   
+              </div>   
+              <div class="section video-sequence" >
+                  <div class="video"    data-videoloop>
+                    <div class="video-container">
+                            <img src="media/images/fullscreen/12378__cw-nyakathisa6320.jpg">
+                         <div class="video-source">Photo by Michael Waker</div>                       
+                    </div>     
+
+                  </div>        
+              </div>
+              <div class="section column" >    
+                
+                                       
+                <h6 style="text-align: right; font-size: 9px;"><em>Image: A view of Nyakathisa Informal Settlement, Mfuleni. Photo by Michael Walker</em></h6>
+<h6 style="text-align: left;">&nbsp;</h6>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">This story was produced by</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><a title="Code for South Africa" href="code4sa.org" target="_blank"><img class="image" style="display: block; margin-left: auto; margin-right: auto;" src="/system/places/images/2124/mobile_640/c4sa-academy-logo-1-0-623x72-1.png" alt="Code for South Afrcia Data Journalism Academy" width="277" height="32" /></a></p>
+<p style="text-align: center;">&nbsp;</p>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">Credits</h1>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><strong>Journalist</strong>&nbsp;Noloyiso Mtembu&nbsp;</p>
+<p style="text-align: center;"><strong>Developer/Designer</strong>&nbsp;Lailah Ryklief&nbsp;</p>
+<p style="text-align: center;"><strong>Photography</strong>&nbsp;Michael Walker</p>
+<p style="text-align: center;"><strong>Video</strong> Lailah Ryklief</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">This story was made possible by the support contributions of:&nbsp;</p>
+<p style="text-align: center;"><strong><strong>Julia Renouprez</strong></strong>&nbsp;and&nbsp;<a title="GeoTerraImage" href="http://www.geoterraimage.com/" target="_blank"><strong>GeoTerraImage</strong></a></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a title="GeoTerraImage" href="http://www.geoterraimage.com/" target="_blank"><img class="image" src="/system/places/images/2124/mobile_640/screen-shot-2016-03-16-at-4-38-44-pm.png" alt="GeoTerra Image" width="70" height="51" /></a>&nbsp; &nbsp;&nbsp;</p>   
+              </div>   
+        
+      </div>
+    </div>   
+        <!--
+          <div class="image image--diptych">
+            <img src="http://i1.nyt.com/newsgraphics/2013/10/24/south-china-sea-videos/assets/696/island-pag-asa.jpg">
+            <img src="http://i1.nyt.com/newsgraphics/2013/10/24/south-china-sea-videos/assets/696/kids.jpg">
+            <div class="caption">About 120 people live at any one time on Pag-asa, including civilians.</div>
+          </div>
+           <div class="image">
+            <img src="http://i1.nyt.com/newsgraphics/2013/10/24/south-china-sea-videos/assets/696/chinese-coast-guards.jpg">
+            <div class="caption">Chinese Coast Guard cutters patrol within sight of the Sierra Madre.</div>
+          </div>     
+         -->
+
+      <!-- ****************************************************
+      *  data hash for mobile devices , they use different images   
+      ********************************************************* -->
+      <script>
+
+
+           var mobileImages = [{"type":"media","file":"mobile_1024/12337__cw-nyakathisa6354.jpg","section":1,"slide":1,"align":"center"},{"type":"media","file":"mobile_1024/12339__settlements-numbers.jpg","section":5,"slide":1,"align":"right"},{"type":"media","file":"mobile_1024/12378__cw-nyakathisa6320.jpg","section":11,"slide":1,"align":"left"}];
+
+      </script>
+
+      <script>
+
+        function mobileReorient() {
+
+          var height = window.innerHeight - 40;
+
+          if (height > (720*.59) && window.innerWidth < 768) height = (720*.59);
+
+          var firstVideo = document.querySelector(".video-sequence");
+          if(firstVideo !== null && firstVideo.length)
+          {
+            firstVideo.querySelector(".video:first-of-type .video-container")[0].style.height = height + "px";
+            firstVideo.querySelector(".video:first-of-type .video-headline")[0].style.height = height + "px";
+          }
+          
+        }
+
+        (function() {
+
+          if (isMobile()) mobileReorient();
+
+        })();
+
+
+        defer(function() {
+
+        /* Only do if we're on iPad, iPhone or Android -- TG */
+        if (!isMobile()) return false;
+
+
+
+            var _mobile_assets =  "media/images/";
+            var _slideshow_assets = "media/slideshow/";
+        
+
+         
+
+        d3.select(window)
+          .on("resize", mobileReorient)
+          .on("scroll", function() {
+              d3.select(".navigation")
+                .classed("navigation-solid", window.scrollY > 350)
+          });
+
+    /*
+      remove br from headlines
+      add ios-loaded class to first video-sequence
+      remove br from byline style
+      we don't need this it's for map sequence
+
+    */
+      //  d3.select(".headline").html( d3.select(".headline").html().replace("<br>", " <br>") )
+
+       d3.select(".video-sequence:first-of-type").classed("ios-loaded", true);
+
+       //d3.select(".column .byline").html( d3.select(".column .byline").html().replace("<br>", " <br>") )
+
+        //d3.select(".section:nth-child(7)").classed("map-sequence", true);
+
+
+    /*
+      scripts work with two devices phones and other devices like pads
+      so it would 2 devices in the future phone and pad
+
+      with small delay loop through hash 
+
+      if device is phone then replace values with phone inner values
+    */
+        setTimeout(function() {
+
+          mobileImages.forEach(function(image) {
+
+            /* if device is phone then replace values with phone inner values */
+            if (isPhone() && image.phone) {
+              for (var i in image.phone) {
+                image[i] = image.phone[i];
+              }
+            }
+
+        /* if device is phone then change path from 1024 to 640 */
+            if (isPhone()) {
+              if (image.file) image.file = image.file.replace("mobile_1024", "mobile_640");
+            }
+
+            /* on section missing stop here current loop */
+            if (!image.section) return false;
+
+        /* create path to image with fixed path and file name */        
+          if(image.type == "media")
+          {
+            image.url = _mobile_assets + image.file;
+          }
+          else if(image.type == "slideshow")
+          { 
+            image.url = _slideshow_assets + image.file; 
+          }
+
+
+        
+            var container;
+        /*  if slide number exicts 
+          find container
+          if type not (map && hide) change html to img tag with url
+          if type not (hide) 
+            if type map caption from file options without # (caption-)
+            else caption- with first word of file options
+          slide assign
+        */
+            if (image.slide) {
+              if(image.type == "media")
+              {
+                container = d3.select(".section:nth-child(" + image.section + ") .video:nth-of-type(" + image.slide + ") .video-container")
+
+                if (image.type != "map" && image.type != "hide") {
+
+
+                  container.html("").append("img")
+                    .attr("src", image.url);
+
+                }
+
+                if (image.type != "hide") {
+
+                  var css;
+
+
+                  if (image.type == "map") css = "caption-" + image.file.replace("#","");
+                  else css = "caption-" + image.file.match(/\/([\w-]+)/)[1];
+
+                    d3.select(".section:nth-child(" + image.section + ") .video:nth-of-type(" + image.slide + ") .video-caption")
+                      .classed(css, true)
+
+                }
+
+
+                var slide = d3.select(".section:nth-child(" + image.section + ") .video:nth-of-type(" + image.slide + ")");
+              }
+              else if( image.type == "slideshow")
+              {
+                container = d3.select(".section:nth-child(" + image.section + ") .slideshow-wrapper");
+                if(container.select(".slideshow-images").empty())
+                {
+                    var temp = container.append("div").attr("class","slideshow-container");
+                    temp.append("div").attr("class", "slideshow-images");
+                }
+                var tempImages =  d3.select(".section:nth-child(" + image.section + ") .slideshow-wrapper .slideshow-container .slideshow-images");
+                caption = container.select(".slideshow-captions .slideshow-caption:nth-of-type(" + image.slide + ")");             
+                tempImages.append("img").attr("src", image.url).attr("class","slideshow-image");
+              }
+            }
+        
+        /* aligning by options */
+            if (image.align && image.type == "media") d3.select(".section:nth-child(" + image.section + ") .video:nth-of-type(" + image.slide + ") .video-caption")
+              .classed(image.align.split(" ").map(function(dir) {
+                    return "align-" + dir
+                  }).join(" "), true)
+
+        
+            if (!image.hideRule && slide) slide.append("div")
+                .attr("class", "video-rule")
+
+
+            /* if phone and map then replace tag */
+            if (image.target == "map") {
+
+              container = d3.select(".section:nth-child(" + image.section + ") .map")
+
+              var source = d3.select(".map-source").html();
+
+              if (isPhone()) container.html("<div class='map-source'>" + source + "</div>")
+
+            }
+
+
+        /* map-hide class it type hide */
+            if (image.type == "media" && image.type == "hide") slide.classed("map-hide", true)
+
+            if (image.type == "media" && image.type == "map") {
+
+              container.html( container.html() + d3.select(image.file).text() )
+            }
+
+
+        /* add custom caption if specified */
+            if (image.type == "media" && image.mobileCaption) {
+              d3.select(".section:nth-child(" + image.section + ") .video:nth-of-type(" + image.slide + ") .video-caption").html(image.mobileCaption);
+            }
+
+
+            /* add src to image tag and if has diptych use it */
+            if (image.type == "image") d3.select(".section:nth-child(" + image.section + ") .image:nth-child(" + image.slide + ") img")
+                .attr("src", function(d) { return image.url; })
+
+            if (image.type == "diptych") d3.select(".section:nth-child(" + image.section + ") .image:nth-child(" + image.slide + ") img:nth-child(" + image.image + ")")
+                .attr("src", function(d) { return image.url; })
+
+          })
+
+        }, 200)
+
+
+        });</script>
+     
+      <script>
+     /* this scripts included when device is not mobile */
+          defer(function() {
+
+          /* Just skip if we're on iPad, iPhone or Android -- TG */
+          if (isMobile()) return false;
+
+              var _video_assets = "media/video/processed/",
+                  _poster_assets = "media/video/poster/",
+                  _image_assets = "media/images/fullscreen/",
+                  _audio_assets = "media/audio/";
+         
+          var mute = false,
+              muteVolume = "volume",
+              fixRatio = 16 / 9,
+              fixHeight = innerWidth / fixRatio,
+              fixTop = Math.round((innerHeight - fixHeight) / 2),
+              fadeTop = Math.max(200, fixTop),
+              fadeBottom = Math.min(innerHeight - 200, fixTop + fixHeight),
+              fade = d3.interpolateRgb("#000", "#fff");
+
+         // var headline = d3.select(".navigation-headline");
+          var scrollprompt = d3.select('.scroll-prompt');
+          var sequence = d3.selectAll(".video-sequence")
+              .datum(function() {
+                return {
+                  first: !this.previousElementSibling,
+                  audio: this.getAttribute("data-audio"),
+                  length: this.querySelectorAll(".video").length
+                };
+              })
+              .call(d3.behavior.watch()
+                .on("scroll", sequencescrolled)
+                .on("statechange", sequencestatechanged));
+
+          sequence.filter(function(d) { return d.audio; }).append("audio")
+              .attr("src", function(d) { return _audio_assets + d.audio + ".mp3"; })
+              .property("loop", true);
+
+
+          // Add for content to have audio track
+          var section_content = d3.selectAll(".section:not(.video-sequence)[data-audio]")      
+              .datum(function() {
+                return {
+                  audio: this.getAttribute("data-audio")
+                };
+              }).call(d3.behavior.watch()
+                .on("scroll", sequencescrolled)
+                .on("statechange", sequencestatechanged));
+
+          section_content.filter(function(d) { return d.audio; }).append("audio")
+              .attr("src", function(d) { return _audio_assets + d.audio + ".mp3"; })
+              .property("loop", true);
+          // content audio end
+            
+
+
+          var section = d3.selectAll(".video")
+              .datum(function() {
+                var previous = this.previousElementSibling,
+                    next = this.nextElementSibling;
+                return {
+                  video: this.getAttribute("data-video"),
+                  animation: this.hasAttribute("data-animation"),
+                  loop: this.hasAttribute("data-videoloop"),
+                  first: !previous || !d3.select(previous).classed("video"),
+                  last: !next || !d3.select(next).classed("video")
+                };
+              });
+
+          var sectionFixed = sequence.selectAll(".video")
+              .each(function(d) { d.sequence = this.parentNode.__data__; })
+              .call(d3.behavior.watch()
+                .on("scroll", fixscrolled)
+                .on("statechange", fixstatechanged));
+
+          var container = section.select(".video-container");
+
+          var video = container.filter(function(d) { return d.video; }).append("video")
+              .attr("preload", "none")
+              .attr("poster", function(d) { return  _poster_assets + d.video + ".jpg"; })
+              .property("loop", function(d) { return !d.animation; })
+              .property("loop", function(d) { return d.loop; })
+              .text("Your browser does not support this video.");
+
+          video.append("source")
+              .attr("src", function(d) { return _video_assets + d.video + ".mp4"; })
+              .attr("type", "video/mp4");
+
+          // video.append("source")
+          //     .attr("src", function(d) { return _video_assets + d.video + ".webm"; })
+          //     .attr("type", "video/webm");
+
+          if (!supportsViewportUnits()) sectionFixed.append("div")
+              .style("height", fixHeight + "px");
+
+          var containerFixed = sectionFixed.select(".video-container")
+              .style("z-index", function(d) { return d.first || d.last ? 1 : 2; })
+              .style("position", function(d) { return d.first || d.last ? "absolute" : "fixed"; })
+              .style("top", function(d) { return d.first || d.last ? null : fixTop + "px"; })
+              .style("display", function(d) { return d.first || d.last ? null : "none"; });
+
+          containerFixed.select(function(d, i) { return d.sequence.length > 1 ? this : null; }).append("div")
+              .attr("class", "video-sequence-indicator")
+              .style("margin-top", function(d) { return -d.sequence.length * 1.4 / 2 + "em"; })
+              .text(function(d, i) { return d3.range(d.sequence.length).map(function(j) { return i === j ? "●" : "○"; }).join("\n"); });
+
+          var muteButton = d3.select(".navigation-volume")
+              .on("click", muted);
+
+          d3.select(window)
+              .on("load.video", loaded)
+              .on("resize.video", resized);
+
+          d3.select("video")
+              .attr("preload", "auto");
+
+          resized();
+
+          function loaded() {
+            video.attr("preload", function(d) { return d.first ? "auto" : "none"; });
+          }
+
+          function muted() {
+            mute = !mute;
+            muteVolume = mute ? "_volume" : "volume";
+            muteButton.classed("navigation-volume--muted", mute);
+            d3.event.preventDefault();
+            d3.selectAll("audio,video").interrupt().property("volume", mute
+                ? function() { this._volume = this.volume; return 0; }
+                : function() { return this._volume; });
+          }
+
+          function resized() {
+            fixHeight = innerWidth / fixRatio;
+            fixTop = Math.round((innerHeight - fixHeight) / 2);
+            fadeTop = Math.max(200, fixTop);
+            fadeBottom = Math.min(innerHeight - 200, fixTop + fixHeight);
+            d3.select(".video-sequence:first-child").style("margin-top", fixTop + "px");
+            containerFixed.style("height", fixHeight + "px").filter(function(d) {
+              var rect = this.parentNode.getBoundingClientRect();
+              return d.first ? rect.top < fixTop
+                  : d.last ? rect.bottom >= fixTop + fixHeight
+                  : true;
+            }).style("top", fixTop + "px");
+          }
+
+          function fixscrolled(d) {
+            if (d.first || d.last) {
+              //!(d.first && d.last) && () for bug when media section has only one media
+              var fixed = !(d.first && d.last) && ((d.first && d3.event.rect.top < fixTop)
+                  || (d.last && d3.event.rect.bottom >= fixTop + fixHeight));
+              d3.select(this.querySelector(".video-container"))
+                  .style("z-index", fixed ? 2 : 1)
+                  .style("position", fixed ? "fixed" : "absolute")
+                  .style("top", fixed ? fixTop + "px" : null);
+            }
+
+            var section = d3.select(this),
+                container = section.select(".video-container"),
+                videoNode = this.querySelector(".video-container video"),
+                volume = 1;
+
+            var opacityTop = d3.event.rect.top - fixHeight / 4,
+                opacity = opacityTop > fixTop + fixHeight * 4 / 5 ? 0 // previous video fully opaque
+                  : !d.last && opacityTop < fixTop - fixHeight ? 0 // next video fully covers this video
+                  : opacityTop < fixTop ? 1 // this video is fully opaque, but may be covered by next video
+                  : Math.max(0, Math.min(1, 1 - (opacityTop - fixTop) / (fixHeight / 5))); // this video is partially opaque
+
+            if (d.first) {
+              if (videoNode) {
+                volume = d3.event.rect.top < fixTop + fadeTop ? Math.max(0, Math.min(1, 1 - (d3.event.rect.top - fixTop) / fadeTop)) : 0;
+                var play = d3.event.rect.top <= fixTop + fadeTop;
+                if (videoNode.paused) {
+                  if (play && (!d.animation || (videoNode.currentTime < videoNode.duration && volume > .8))) {
+                    videoNode.play();
+                  }
+                } else if (!play) {
+                  videoNode.pause();
+                }
+              }
+              container.style("opacity", opacityTop >= fixTop - fixHeight ? 1 : 0);
+            } else {
+              container.style("opacity", opacity);
+              if (videoNode) {
+                if (videoNode.paused) {
+                  if (opacity) {
+                   if (!d.animation || (videoNode.currentTime < videoNode.duration && opacity > .8)) {
+                      videoNode.play();
+                    }
+                  } else if (videoNode.currentTime) {
+                    videoNode.currentTime = 0;
+                  }
+                } else if (!opacity) {
+                  videoNode.pause();
+                  if (videoNode.currentTime) videoNode.currentTime = 0;
+                }
+              }
+            }
+
+            if (d.last) {
+              if (videoNode) {
+                volume = d3.event.rect.bottom < fadeBottom ? Math.max(0, Math.min(1, 1 - (fadeBottom - d3.event.rect.bottom) / fadeTop)) : 1;
+                var play = d3.event.rect.bottom >= fadeBottom - fadeTop;
+                if (videoNode.paused) {
+                  if (play && (!d.animation || (videoNode.currentTime < videoNode.duration && volume > .8))) {
+                    videoNode.play();
+                  }
+                } else if (!play) {
+                  videoNode.pause();
+                }
+              }
+            }
+
+            section.select(".video-caption").style("opacity", opacityTop > fixTop ? (d.first ? 1 : Math.max(0, 1 - (opacityTop - fixTop) / (fixHeight / 5))) // fade in from bottom
+                : opacityTop > fixTop - fixHeight * 4 / 5 ? 1 // this video is fully opaque and not covered
+                : d.last ? 1 : Math.max(0, (opacityTop - fixTop + fixHeight * 4 / 5) / (fixHeight / 5) + 1)); // fade out to top
+
+            if (videoNode) {
+              videoNode[muteVolume] = volume = volume !== 1 ? volume // special-case volume for first and last fade
+                  : opacityTop < fixTop - fixHeight ? 0 // video is fully covered by next video
+                  : opacityTop < fixTop - fixHeight / 2 ? Math.max(0, Math.min(1, (opacityTop - fixTop + fixHeight) / (fixHeight / 2)))
+                  : opacity;
+              if (d.first && d.sequence.first) scrollprompt.style("opacity",  volume == 1 ? 1 : (volume-0.7) > 0 ? (volume-0.7) : 0 );              
+              //if (d.first && d.sequence.first) headline.style("opacity", 1 - volume);
+            }
+          }
+
+          function fixstatechanged(d) {
+            d3.select(this.querySelector(".video-container"))
+                .style("display", d3.event.state ? null : "none")
+              .select("video")
+                .each(function() {
+                  if (!d3.event.state) {
+                    if (!this.paused) this.pause();
+                    if (this.currentTime) this.currentTime = 0;
+                  }
+                });                 
+                if (d.first && d.sequence.first && !d3.event.state) scrollprompt.style("opacity", 1);
+            //if (d.first && d.sequence.first && !d3.event.state) headline.style("opacity", null);
+          }
+
+          function sequencescrolled() {
+            var opacity = Math.max(0, Math.min(1, d3.event.rect.bottom < fadeBottom ? (fadeBottom - d3.event.rect.bottom) / fadeTop
+                : d3.event.rect.top < fixTop + fadeTop ? (d3.event.rect.top - fixTop) / fadeTop
+                : 1));
+
+            // bug for column background change deny #if(){ data }
+            if(!d3.select(this).classed("column"))
+            {
+              d3.select("body").style("background", fade(opacity));
+            }
+            d3.select(this).select("audio").property(muteVolume, 1 - opacity);         
+          }
+
+          function sequencestatechanged() {
+            var sequence = d3.select(this),
+                audio = sequence.select("audio");           
+            if (d3.event.state) {
+              sequence.selectAll("video").each(function() { this.preload = "auto";});
+              audio.each(function() { this.play();  });
+            } else {
+              d3.select("body").style("background", null);
+              audio.each(function() { this.pause(); });
+            }
+          }
+
+          function supportsViewportUnits() {
+            var element = d3.select("body").append("div").style("width", "50vw"),
+                expected = innerWidth / 2,
+                actual = parseFloat(element.style("width"));
+            element.remove();
+            return Math.abs(expected - actual) <= 1;
+          }
+
+          });</script>
+          <script>defer(function() {
+
+          if (isMobile()) return false;
+
+
+
+              var assets = "media/slideshow/slideshow/";              
+      
+          /*" + (innerWidth * (window.devicePixelRatio || 1) * .7 > 900 ? "large" : "medium") + "*/
+
+
+
+          d3.selectAll(".slideshow").each(function() {
+            var currentIndex = 0,
+                playInterval;
+
+            var watch = d3.behavior.watch()
+                .on("statechange.first", firststatechanged)
+                .on("statechange", statechanged);
+
+            var slideshow = d3.select(this).select(".slideshow-wrapper")
+                .on("mouseover", stopPlay)
+                .on("mouseout", stopPlay)
+                .call(watch);
+
+            var caption = slideshow.select(".slideshow-captions").selectAll(".slideshow-caption")
+                .datum(function() {
+                  return {
+                    slug: this.getAttribute("data-slug")
+                  };
+                })
+                .classed("slideshow-caption--active", function(d, i) { return i === currentIndex; });
+
+            var images = caption.data();
+
+            var container = slideshow.insert("div", ".slideshow-captions")
+                .attr("class", "slideshow-container");
+
+            var image = container.append("div")
+                .attr("class", "slideshow-images")
+              .selectAll(".slideshow-image")
+                .data(images)
+              .enter().append("img")
+                .attr("class", "slideshow-image");
+
+            image.filter(function(d, i) { return i === currentIndex; })
+                .classed("slideshow-image--active", true)
+                .attr("src", function(d) { return assets + d.slug; })
+                .each(moveToFront);
+
+            container.append("div")
+                .attr("class", "slideshow-button slideshow-button--next")
+                .on("click", function() { stopPlay(); showNext(); })
+               .html("<svg class='slideshow-button-arrow' width='45' height='59' viewBox='-13 -21 45 59'><path d='M3,1.008L20.742,9.045L3,17.083L6,8.917Z'></path></svg>");  
+
+            container.append("div")
+                .attr("class", "slideshow-button slideshow-button--previous")
+                .on("click", function() { stopPlay(); showPrevious(); })
+              .html("<svg class='slideshow-button-arrow' width='45' height='59' viewBox='-13 -21 45 59'><path d='M18.742,0.758L1,8.795L18.742,16.833L15.742,8.667Z'></path></svg>");   
+
+            var thumb = container.insert("div", ".slideshow-captions")
+                .attr("class", "slideshow-thumbs")
+              .selectAll(".slideshow-thumb")
+                .data(images)
+              .enter().append("img")
+                .attr("class", function(d, i) { return "slideshow-thumb" + (i === currentIndex ? " slideshow-thumb--active" : ""); })
+                .attr("src", function(d) { return "media/slideshow/thumbnail/" + d.slug; })
+
+                .on("click", function(d, i) { stopPlay(); show(i); });
+
+            function firststatechanged() {
+              if (d3.event.state) {
+                image.attr("src", function(d, i) { return assets + d.slug; });
+                watch.on("statechange.first", null);
+              }
+            }
+
+            function statechanged() {
+              if (d3.event.state) startPlay();
+              else stopPlay();
+            }
+
+            function startPlay() {
+              if (!playInterval) playInterval = setInterval(showNext, 7000);
+            }
+
+            function stopPlay() {
+              if (playInterval) playInterval = clearInterval(playInterval);
+            }
+
+            function show(index) {
+              var oldImage = d3.select(image[0][currentIndex]),
+                  oldCaption = d3.select(caption[0][currentIndex]),
+                  oldThumb = d3.select(thumb[0][currentIndex]),
+                  newImage = d3.select(image[0][index]),
+                  newCaption = d3.select(caption[0][index]),
+                  newThumb = d3.select(thumb[0][index]);
+
+              oldImage
+                  .classed("slideshow-image--active", false);
+
+              oldCaption
+                  .classed("slideshow-caption--active", false);
+
+              oldThumb
+                  .classed("slideshow-thumb--active", false);
+
+              newImage
+                  .classed("slideshow-image--active", true)
+                  .style("opacity", 0)
+                  .each(moveToFront);
+
+              newCaption
+                  .classed("slideshow-caption--active", true);
+
+              newThumb
+                  .classed("slideshow-thumb--active", true);
+
+              currentIndex = index;
+
+              d3.timer(function() {
+                newImage.style("opacity", null);
+              }, 20);
+            }
+
+            function showNext() {
+              show((currentIndex + 1) % images.length);
+            }
+
+            function showPrevious() {
+              show((currentIndex ? currentIndex : images.length) - 1);
+            }
+          });
+
+          function moveToFront() {
+            this.parentNode.appendChild(this);
+          }
+
+          });</script>
+    <!--[if gt IE 8]><!-->
+      <!-- ****************************************************
+      *  D3 library
+      ********************************************************* -->  
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>  
+
+    <script>
+
+      (function() {
+
+        var watched = [];
+
+        d3.behavior.watch = function() {
+          var event = d3.dispatch("statechange", "scroll");
+
+          function watch(selection) {
+            selection.each(function(i) {
+              watched.push({
+                element: this,
+                state: 0,
+                index: i,
+                event: event
+              });
+            });
+          }
+
+          return d3.rebind(watch, event, "on");
+        };
+
+        if (/iPhone|iPad|iPad|Android/.test(navigator.userAgent) || location.hash == "#ipad") {
+          d3.select(window)
+              .on("resize.watch", watch_scrolledStatic)
+              .on("DOMContentLoaded.watch", watch_scrolledStatic);
+        } else {
+          d3.select(window)
+              .on("resize.watch", watch_scrolled)
+              .on("scroll.watch", watch_scrolled)
+              .on("DOMContentLoaded.watch", watch_scrolled);
+        }
+
+        function watch_scrolled() {
+          watched.forEach(function(watch) {
+            var rect = watch.element.getBoundingClientRect();
+            if (rect.top + rect.height < 0 || rect.bottom - rect.height - innerHeight > 0) {
+              watch_state(watch, 0);
+            } else {
+              var t = rect.top / (innerHeight - rect.height);
+              watch_state(watch, t < 0 || t > 1 ? 1 : 2);
+              watch_dispatch(watch, {type: "scroll", offset: t, rect: rect});
+            }
+          });
+        }
+
+        function watch_scrolledStatic() {
+          watched.forEach(function(watch) {
+            watch_state(watch, 1);
+            watch_dispatch(watch, {type: "scroll", offset: .5, rect: {top: 0}}); // XXX rect
+          });
+        }
+
+        function watch_state(watch, state1) {
+          var state0 = watch.state;
+          if (state0 !== state1) watch_dispatch(watch, {
+            type: "statechange",
+            state: watch.state = state1,
+            previousState: state0
+          });
+        }
+
+        function watch_dispatch(watch, event) {
+          var element = watch.element,
+              sourceEvent = event.sourceEvent = d3.event;
+          try {
+            d3.event = event;
+            watch.event[event.type].call(element, element.__data__, watch.index);
+          } finally {
+            d3.event = sourceEvent;
+          }
+        }
+
+        await();
+
+    })();</script>
+    <!--<![endif]-->  
+   
+    </div>   
+    <div class="powered-by">
+   Powered by&nbsp;&nbsp;<a href="http://www.jumpstart.ge" target="_blank" title="JumpStart Georgia - We communicate data better!">Jumpstart Georgia</a>
+</div>   
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>          
+          <script src="js/modalos.js"></script>   
+          <script src="js/page.js"></script>   
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-12801815-33', 'jumpstart.ge');
+          ga('send', 'pageview');
+        </script>
+    
+  </body>
+</html> 
